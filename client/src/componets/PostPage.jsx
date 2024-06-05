@@ -108,7 +108,7 @@ export default function PostPage() {
                </Link>
           
           
-           {post?.video ? <div className='mx-auto h-[40%] w-[50%] p-3'><Player autoPlay  loop   playsInline  fluid={false}width={480} height={272}   src={post.video}/></div> :<img src={post && post.image} alt={post && post.image} className=' mx-auto h-[40%] w-[50%] p-3 object-cover' />}
+           {post?.video ? <div className='mx-auto h-[40%] w-[50%] p-3'><Player autoPlay  loop   playsInline  fluid={false}width={480} height={272}   src={post.video}/></div> :<img src={post && post.image} alt={post && post.image} className=' mx-auto h-[30%] w-[40%] p-3 object-cover' />}
            
            
               <div className='flex justify-between border-b border-slate-300 mx-auto w-full max-w-2xl text-xs'>
