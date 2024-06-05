@@ -99,7 +99,15 @@ export default function SignIn() {
   
    
      <div className='flex-1  '>
- 
+      <div className='flex flex-col'>
+     <p className='text-sm'>Every person experiences different relationships at different stages of their life. Moreover, relationships
+      <p className='text-sm'> change with time; some are never-ending bonds, and some end in a few months. </p>
+      <p className='text-sm'>But one relationship that always remains the same no matter what difficulties life throws at</p>
+      <p className='text-sm'> them is the bond of a brother and a sister. It is an unshakeable bond which becomes stronger with time </p>
+      and has no expiry date</p>
+      <p className='font-bold text-md'>THIS WORK Was Dedicated to My Best Brother</p>
+  </div>
+  
    <img src={gym} className='w-[100%] h-[100%] object-cover rounded-md shadow-2xl'/>
    
    <Link to="/" className='flex items-center justify-center  '>
