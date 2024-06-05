@@ -84,7 +84,7 @@ const CoacProfile = ({user,post,setPost}) => {
       
       </div>
  
-      {currentUser?._id === item?.userId   &&<Button onClick={handleshow} className='w-full' gradientDuoTone="purpleToBlue">
+      {currentUser?._id === user?._id   &&<Button onClick={handleshow} className='w-full' gradientDuoTone="purpleToBlue">
   <p className="cursor-pointer relative">Add Video</p>
  
 
@@ -96,7 +96,7 @@ const CoacProfile = ({user,post,setPost}) => {
   
   
   
- {currentUser?._id === item?.userId && <Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
+ {urrentUser?._id === user?._id && <Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
   
  
  
