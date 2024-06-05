@@ -96,7 +96,7 @@ const CoacProfile = ({user,post,setPost}) => {
   
   
   
- {urrentUser?._id === user?._id && <Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
+ {currentUser?._id === user?._id && <Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
   
  
  
