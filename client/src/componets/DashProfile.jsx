@@ -279,7 +279,7 @@ const handleChange = (e) =>{
        
        
        
-         <div onClick={() => filePickerRef.current.click()} className='w-20 h-20 relative  self-center cursor-pointer  shadow-md overflow-hidden rounded-full'>
+  <div onClick={() => filePickerRef.current.click()} className='w-20 h-20 relative  self-center cursor-pointer  shadow-md overflow-hidden rounded-full'>
        
     
        

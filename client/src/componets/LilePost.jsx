@@ -6,7 +6,7 @@ const LilePost = ({item, setPost,post}) => {
   
     const{currentUser} = useSelector(state => state.user)
   
-    const[like,setLike] = useState([])
+   
  
     const handleLike = async () => {
         try {

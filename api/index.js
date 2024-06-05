@@ -8,7 +8,7 @@ import cookieParser from 'cookie-parser'
 import postRoute from './routes/post.js'
  import comentRoute from './routes/coment.js'
 import getallRoute from './routes/getAll.js'
-
+import path from 'path';
 
 dotenv.config()
 
@@ -36,7 +36,7 @@ app.use(cors({origin:"http://localhost:5173",credentials:true}))
 .then(() => console.log("Db Connected"))
 .catch((error) => console.log(error))
 
-
+const __dirname = path.resolve();
 
 
 app.listen(5000,()=>{
@@ -53,6 +53,12 @@ app.use("/api/auth",authRoute)
 app.use("/api/post",postRoute)
 app.use("/api/coment",comentRoute)
 app.use("/api/getAll",getallRoute)
+
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
 
 
 
