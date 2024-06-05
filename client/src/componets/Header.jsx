@@ -72,7 +72,7 @@ export default function Header() {
   
   else{
     dispatch(signoutSuccess())
-    navigate("/")
+    navigate("/signin")
   }
      
   
