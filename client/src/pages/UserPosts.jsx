@@ -16,7 +16,7 @@ const UserPosts = () => {
  
    const fetchuser =async () => {
 try{
-const res = await fetch(`http://localhost:5000/api/user/${currentUser._id}`)
+const res = await fetch(`https://gymblogg.onrender.com/api/user/${currentUser._id}`)
 
 const data = await res.json()
 if(res.ok){
