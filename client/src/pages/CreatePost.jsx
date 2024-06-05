@@ -92,7 +92,7 @@ import{useSelector } from 'react-redux'
 
 
        try{
-         const res = await fetch("http://localhost:5000/api/post/create",{
+         const res = await fetch("https://gymblogg.onrender.com/api/post/create",{
           credentials: "include",
           method:"POST",
      

@@ -34,7 +34,7 @@ const CoacProfile = ({user,post,setPost}) => {
     const startIndex = post.length;
     try {
       const res = await fetch(
-        `http://localhost:5000/api/post/getposts?userId=${currentUser._id}&startIndex=${startIndex}`
+        `https://gymblogg.onrender.com/api/post/getposts?userId=${currentUser._id}&startIndex=${startIndex}`
       );
       const data = await res.json();
       if (res.ok) {

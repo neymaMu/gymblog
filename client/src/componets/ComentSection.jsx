@@ -26,7 +26,7 @@ export default function ComentSection({postId,slug}) {
      }
       
      try{
-      const res = await fetch(`http://localhost:5000/api/coment/create`,{
+      const res = await fetch(`https://gymblogg.onrender.com/api/coment/create`,{
         credentials: "include",
       method:"POST",
      
@@ -65,7 +65,7 @@ export default function ComentSection({postId,slug}) {
 
   try{
 
-  const res = await fetch(`http://localhost:5000/api/coment/getcoment/${postId}`,{
+  const res = await fetch(`https://gymblogg.onrender.com/api/coment/getcoment/${postId}`,{
    
  
  
@@ -95,7 +95,7 @@ export default function ComentSection({postId,slug}) {
       navigate('/signin');
       return;
     }
-    const res = await fetch(`http://localhost:5000/api/coment/likecoment/${commentId}`,{
+    const res = await fetch(`https://gymblogg.onrender.com/api/coment/likecoment/${commentId}`,{
       credentials: "include",
     method:"PUT",
   },
@@ -137,7 +137,7 @@ export default function ComentSection({postId,slug}) {
 
 
 
-const res = await fetch(`http://localhost:5000/api/coment/deletecoment/${commentId}`,{
+const res = await fetch(`https://gymblogg.onrender.com/api/coment/deletecoment/${commentId}`,{
   credentials: "include",
 method:"DELETE",
  

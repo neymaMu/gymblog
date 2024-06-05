@@ -149,7 +149,7 @@ export default function SignUp() {
        
         setLoading(true)
         setErrorMessage(false)
-      const res = await fetch("http://localhost:5000/api/auth/signup",{
+      const res = await fetch("https://gymblogg.onrender.com/api/auth/signup",{
         credentials: "include",
       method:"POST",
       headers:{"Content-Type":"application/json"},

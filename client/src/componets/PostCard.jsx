@@ -18,7 +18,7 @@ export default function PostCard({post}) {
 
     try{
 
-     const res = await fetch(`http://localhost:5000/api/post/relate/${post._id}`,{
+     const res = await fetch(`https://gymblogg.onrender.com/api/post/relate/${post._id}`,{
         credentials: "include",
       })
       

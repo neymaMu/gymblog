@@ -28,7 +28,7 @@ getUsers()
  const getUsers = async() => {
     try{
   
-        const res = await fetch(`http://localhost:5000/api/user/${comen.userId}`)
+        const res = await fetch(`https://gymblogg.onrender.com/api/user/${comen.userId}`)
 
         const data = await res.json() 
        
@@ -56,7 +56,7 @@ getUsers()
  const handlesave = async() => {
 
   try{
-  const res = await fetch(`http://localhost:5000/api/coment/editcoment/${comen._id}`,{
+  const res = await fetch(`https://gymblogg.onrender.com/api/coment/editcoment/${comen._id}`,{
     credentials: "include",
   method:"PUT",
   

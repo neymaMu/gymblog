@@ -45,7 +45,7 @@ export default function DashSidebar() {
   const handlesignout =async () =>{
 
     try{
-   const res = await fetch('http://localhost:5000/api/user/signout',{
+   const res = await fetch('https://gymblogg.onrender.com/api/user/signout',{
     method:"POST"
    })
 
@@ -71,7 +71,7 @@ export default function DashSidebar() {
    
     const fetchuser =async () => {
       try{
-      const res = await fetch(`http://localhost:5000/api/user/${currentUser._id}`)
+      const res = await fetch(`https://gymblogg.onrender.com/api/user/${currentUser._id}`)
       
       const data = await res.json()
       if(res.ok){

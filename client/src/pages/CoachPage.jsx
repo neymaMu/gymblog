@@ -16,7 +16,7 @@ const CoachPage = () => {
  
    const fetchuser =async () => {
 try{
-const res = await fetch(`http://localhost:5000/api/user/${userId}`)
+const res = await fetch(`https://gymblogg.onrender.com/api/user/${userId}`)
 
 const data = await res.json()
 if(res.ok){
@@ -37,7 +37,7 @@ fetchuser()
  
  const fetchPost =async () => {
     try{
-    const res = await fetch(`http://localhost:5000/api/post/getposts?userId=${userId}`)
+    const res = await fetch(`https://gymblogg.onrender.com/api/post/getposts?userId=${userId}`)
     
     const data = await res.json()
     if(res.ok){

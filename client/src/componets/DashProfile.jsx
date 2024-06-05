@@ -168,7 +168,7 @@ const handleChange = (e) =>{
   }
     try{
       dispatch(updateStart())
-     const res = await fetch(`http://localhost:5000/api/user/update/${currentUser._id}`,{
+     const res = await fetch(`https://gymblogg.onrender.com/api/user/update/${currentUser._id}`,{
       credentials: 'include',
      method:"PUT",
      
@@ -210,7 +210,7 @@ const handleChange = (e) =>{
      try{
     
       dispatch(deleteUserStart())
-     const res = await fetch(`http://localhost:5000/api/user/delete/${currentUser._id}`,{
+     const res = await fetch(`https://gymblogg.onrender.com/api/user/delete/${currentUser._id}`,{
       credentials: 'include',
      method:"DELETE",
     
@@ -235,7 +235,7 @@ const handleChange = (e) =>{
     const handlesignout =async () =>{
 
     try{
-   const res = await fetch('http://localhost:5000/api/user/signout',{
+   const res = await fetch('https://gymblogg.onrender.com/api/user/signout',{
     method:"POST"
    })
 

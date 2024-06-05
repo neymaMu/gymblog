@@ -32,7 +32,7 @@ export default function PostPage() {
 
       setLoading(true) 
 
-      const res = await fetch(`http://localhost:5000/api/post/getposts?slug=${postSlug}`)
+      const res = await fetch(`https://gymblogg.onrender.com/api/post/getposts?slug=${postSlug}`)
       
       const data = await res.json()
       

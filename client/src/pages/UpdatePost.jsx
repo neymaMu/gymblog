@@ -84,7 +84,7 @@ import{useSelector} from 'react-redux'
 
 
        try{
-         const res = await fetch(`https://mern-blog-kdbu.onrender.com/api/post/updatedpost/${postId}/${currentUser._id}`,{
+         const res = await fetch(`https://gymblogg.onrender.com/api/post/updatedpost/${postId}/${currentUser._id}`,{
           credentials: 'include',
           method:"PUT",
       

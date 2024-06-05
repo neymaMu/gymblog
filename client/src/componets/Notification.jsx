@@ -13,7 +13,7 @@ const Notification = ({item,setNotify}) => {
 
     try{
   
-    const res = await fetch(`http://localhost:5000/api/user/notifydelete/${item._id}/${currentUser._id}`,{
+    const res = await fetch(`https://gymblogg.onrender.com/api/user/notifydelete/${item._id}/${currentUser._id}`,{
       credentials: "include",
     method:"DELETE"
     

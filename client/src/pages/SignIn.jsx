@@ -42,7 +42,7 @@ export default function SignIn() {
        
         setLoading(true)
         setErrorMessage(false)
-      const res = await fetch("http://localhost:5000/api/auth/signIn",{
+      const res = await fetch("https://gymblogg.onrender.com/api/auth/signIn",{
         credentials: "include",
     
       method:"POST",

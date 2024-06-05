@@ -24,7 +24,7 @@ const FlowPage = ({item, flowuser, setFlowuser}) => {
    
      try{
    
-     const res = await fetch(`http://localhost:5000/api/coment/getcomments/${item._id}`,{
+     const res = await fetch(`https://gymblogg.onrender.com/api/coment/getcomments/${item._id}`,{
       
     
     
@@ -47,7 +47,7 @@ const FlowPage = ({item, flowuser, setFlowuser}) => {
       try {
        
         
-        const res = await fetch(`http://localhost:5000/api/post/likepost/${item._id}`,{
+        const res = await fetch(`https://gymblogg.onrender.com/api/post/likepost/${item._id}`,{
           credentials: "include",
         method:"PUT",
       },

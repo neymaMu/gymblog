@@ -19,7 +19,7 @@ const UserComents = ({item}) => {
     
       try{
     
-      const res = await fetch(`http://localhost:5000/api/coment/getcomments/${item._id}`,{
+      const res = await fetch(`https://gymblogg.onrender.com/api/coment/getcomments/${item._id}`,{
        
      
      

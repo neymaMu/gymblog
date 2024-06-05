@@ -59,7 +59,7 @@ export default function Header() {
   const handlesignout =async () =>{
 
     try{
-   const res = await fetch('https://mern-blog-kdbu.onrender.com/api/user/signout',{
+   const res = await fetch('https://gymblogg.onrender.com/api/user/signout',{
     method:"POST"
    })
 
@@ -101,7 +101,7 @@ export default function Header() {
     const fetchnotify = async () => {
      
       try{
-        const res = await fetch(`http://localhost:5000/api/user/noti/${currentUser._id}`,{
+        const res = await fetch(`https://gymblogg.onrender.com/api/user/noti/${currentUser._id}`,{
           credentials: "include",
         });
         const data = await res.json();

@@ -46,7 +46,7 @@ const Coatch = () => {
     
     try{
   
-  const res = await fetch(`http://localhost:5000/api/getAll/getuser/${currentUser._id}`,{
+  const res = await fetch(`https://gymblogg.onrender.com/api/getAll/getuser/${currentUser._id}`,{
     credentials: "include",
   
   })

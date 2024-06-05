@@ -28,7 +28,7 @@ export default function Home() {
     const startIndex = flowuser.length;
     try {
       const res = await fetch(
-        `http://localhost:5000/api/post/getflowing?startIndex=${startIndex}`,{
+        `https://gymblogg.onrender.com/api/post/getflowing?startIndex=${startIndex}`,{
           credentials: "include",
         } );
    
@@ -55,7 +55,7 @@ export default function Home() {
  const fetchflowpost = async( ) =>{
     
       try{
-        const res = await fetch(`http://localhost:5000/api/post/getflowing`,{
+        const res = await fetch(`https://gymblogg.onrender.com/api/post/getflowing`,{
         
         credentials: "include",
     

@@ -19,7 +19,7 @@ const FollowButton = ({item,setUser,user}) => {
     const Follow = async(currentUserId, selectedUserId) => {
    
         try{
-        const res = await fetch(`http://localhost:5000/api/user/flowing`,{
+        const res = await fetch(`https://gymblogg.onrender.com/api/user/flowing`,{
          
         credentials: "include",
         method:"PUT",
@@ -50,7 +50,7 @@ const FollowButton = ({item,setUser,user}) => {
       const unFollow = async(currentUserId, selectedUserId) => {
    
         try{
-        const res = await fetch(`http://localhost:5000/api/user/unflowing`,{
+        const res = await fetch(`https://gymblogg.onrender.com/api/user/unflowing`,{
          
         credentials: "include",
         method:"POST",
