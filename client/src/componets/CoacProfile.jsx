@@ -78,13 +78,13 @@ const CoacProfile = ({user,post,setPost}) => {
 
    
       <div className='flex flex-col items-center justify-center mt-[-20px] '>
-       <h1 className='font-semibold'>@{user.username}</h1>
+       <h1 className='font-semibold'>@{currentUser.username}</h1>
   
-       <img src={user.profilePicture} className='h-20 w-20 rounded-full'/>
+       <img src={currentUser.profilePicture} className='h-20 w-20 rounded-full'/>
       
       </div>
  
-      {currentUser?._id == user?._id &&<Button onClick={handleshow} className='w-full' gradientDuoTone="purpleToBlue">
+      {currentUser?._id === user?._id &&<Button onClick={handleshow} className='w-full' gradientDuoTone="purpleToBlue">
   <p className="cursor-pointer relative">Add Video</p>
  
 
@@ -96,7 +96,7 @@ const CoacProfile = ({user,post,setPost}) => {
   
   
   
- {currentUser?._id == user?._id &&<Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
+ {currentUser?._id === user?._id &&<Button className='w-full'  gradientDuoTone='purpleToPink'><Link to="/createpost">Create a Post</Link></Button>}
   
  
  

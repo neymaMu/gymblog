@@ -50,14 +50,7 @@ export default function Dashborad() {
     {tab === 'profile' && <DashProfile/>}
    
     
-
-    
-
-    
-
-   
-   
-     {tab === 'user' && <UserPosts/>}
+    {tab === 'user' && <UserPosts/>}
     
     
     
