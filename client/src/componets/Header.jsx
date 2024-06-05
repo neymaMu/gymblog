@@ -96,7 +96,7 @@ export default function Header() {
    
      
         fetchnotify()
-      }, [notify]);
+      }, [currentUser._id]);
    
    
    
