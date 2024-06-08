@@ -233,7 +233,7 @@ export const getnotify = async(req,res,next) => {
   
   try{
  
-  const notify = await Notification.find({userId},{$ne: user._id}).sort({createdAt:-1})
+  const notify = await Notification.find(userId,{$ne: user._id}).sort({createdAt:-1})
    
   res.json({posts:notify})
    
