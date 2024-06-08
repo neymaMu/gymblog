@@ -30,9 +30,9 @@ import Notification from "../models/notification.js"
       userId:admin,
       
     })
-    await notify.save()
+  
      await Newcoment.save()
-   
+     await notify.save()
    res.status(200).json(Newcoment)
   
     
