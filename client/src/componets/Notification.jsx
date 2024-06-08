@@ -59,7 +59,7 @@ const Notification = ({item,setNotify}) => {
 
 <div>
 <div className='flex   flex-col gap-1'>
-{currentUser === item._id ? <h1>{item.me}</h1>:<h1 className='text-white '>@{item.subject}</h1>}
+{currentUser._id === item.userId ? <h1>you coment on your post</h1>:<h1 className='text-white '>@{item.subject}</h1>}
 {item?.slug?.length > 20? <p className='text-gray-900 italic'>{item?.slug?.slice(0,20)+"..."}</p>:<p className='text-gray-900 italic'>{item?.slug}</p>}
 
 </div>

@@ -24,7 +24,7 @@ import Notification from "../models/notification.js"
     
     
     subject:`${username } comment on your post` ,
-    me:`${{userId:{$in:req.user.username}}} you comment on your post`,
+  
     slug:slug,
       content:content,
       userId:admin,
