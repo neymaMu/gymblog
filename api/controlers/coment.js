@@ -20,19 +20,19 @@ import Notification from "../models/notification.js"
     
     const {userId:admin} = await Post.findById(postId)
       
-  const notify =  await Notification.create({
+   await Notification.create({
     
     
-    subject:req.user.id === notify.id?`you comment on your post` : `${username } comment on your post` ,
+    subject:req.user.id?`you comment on your post` : `${username } comment on your post` ,
   
-    slug:slug,
+      slug:slug,
       content:content,
       userId:admin,
       
     })
   
      await Newcoment.save()
-     await notify.save()
+   
    res.status(200).json(Newcoment)
   
     
