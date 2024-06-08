@@ -23,7 +23,7 @@ import Notification from "../models/notification.js"
    await Notification.create({
     
     
-    subject:req.user.id === userId?`you comment on your post` : `${username } comment on your post` ,
+    subject:req.user.id === admin.id?`you comment on your post` : `${username } comment on your post` ,
   
     slug:slug,
       content:content,
