@@ -16,7 +16,10 @@ content:{
     type:String,
   
 },
-
+me:{
+    type:String,
+  
+},
 
 reseve:{
     type:String,
