@@ -222,10 +222,18 @@ export const unFolow =async(req,res,next)=>{
 
 export const getnotify = async(req,res,next) => {
   
+  const {userId} = req.params
    
-    try{
+  const user = await User.findById(userId)
+  
+  if(!user)
+  return res.status(404).json({error: "post not found"})
+  
+  
+  
+  try{
  
-  const notify = await Notification.find({userId:req.params.userId}).sort({createdAt:-1})
+  const notify = await Notification.find({userId},{$ne: user._id}).sort({createdAt:-1})
    
   res.json({posts:notify})
    
