@@ -23,12 +23,12 @@ import Notification from "../models/notification.js"
    await Notification.create({
     
     
-    subject:`${username } comment on your post` ,
+    subject:req.user.userId?`you comment on your post` : `${username } comment on your post` ,
   
     slug:slug,
       content:content,
       userId:admin,
-    
+      
     })
     
      await Newcoment.save()
