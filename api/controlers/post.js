@@ -95,7 +95,7 @@ import { errorHandler } from "../utils/error.js"
 
     export const DeletePost = async(req,res,next) => {
 
-         if(!req.user.isAdmin || req.user.id !== req.params.userId){
+         if(req.user.id !== req.params.userId){
         return next(errorHandler(403,"you are not alowed to deltet this post"))
       }
      
