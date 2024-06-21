@@ -172,7 +172,7 @@ const AddVideo = ({setShow}) => {
     
       <div className='flex gap-4 justify-between items-center border-1 border-teal-500 border-dotted p-3'>
 
-<FileInput type="file"  onChange={(e) => setFile(e.target.files[0])}/>
+<FileInput type="file" accept='video/*' onChange={(e) => setFile(e.target.files[0])}/>
 
 
 
